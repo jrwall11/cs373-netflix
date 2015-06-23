@@ -70,8 +70,9 @@ def netflix_solve(r, w) :
 			print(current_movie_rating)
 		else :
 			q = int(s)
-			print(q)
+			#print(q)
 			current_user_rating = simple_user_cache.get(str(q))
-			print(current_user_rating)
+			#print(current_user_rating)
 			actual_user_rating = expected_results.get(str(v)).get(str(q))
+			#print(actual_user_rating)
 	w.write("1\n")
