@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-import urllib
+#import urllib
 import json
-import requests
-from urllib.request import urlopen
+#import requests
+#from urllib.request import urlopen
 import os
-import pickle
+#import pickle
 from pprint import pprint
 
 global simple_user_cache
