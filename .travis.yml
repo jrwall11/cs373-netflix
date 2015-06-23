@@ -33,7 +33,6 @@ script:
     - ls -al
     - touch Netflix.log
     - git clone https://github.com/cs373-summer-2015/netflix-tests.git cache_files
-    - make netflix-tests
     - ls -al
     - make Netflix.html
     - ls -al
