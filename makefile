@@ -37,7 +37,7 @@ config:
 test: RunNetflix.out TestNetflix.out
 
 netflix-tests:
-	git clone https://github.com/cs373-summer-2015/netflix-tests.git
+	git clone https://github.com/cs373-summer-2015/netflix-tests.git cache_files
 
 Netflix.html: Netflix.py
 	pydoc3 -w Netflix

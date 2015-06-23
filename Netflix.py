@@ -9,9 +9,13 @@ from pprint import pprint
 
 global simple_user_cache
 global simple_movie_cache
-with open('/u/ebanner/netflix-tests/ezo55-Average_Viewer_Rating_Cache.json') as url :
+if "TRAVIS_CACHE" in os.environ :
+	cache_path = os.environ["TRAVIS_CACHE"]
+else :
+	cache_path = "/u/ebanner/netflix-tests"
+with open(cache_path+'/ezo55-Average_Viewer_Rating_Cache.json') as url :
 	simple_user_cache = json.load(url)
-with open('/u/ebanner/netflix-tests/BRG564-Average_Movie_Rating_Cache.json') as url2 :
+with open(cache_path+'/BRG564-Average_Movie_Rating_Cache.json') as url2 :
 	simple_movie_cache = json.load(url2)
 
 #
@@ -56,12 +60,12 @@ def netflix_solve(r, w) :
 		if rep_int_check(s) is False :
 			v = s[:-2]
 			current_movie_rating = int(v)
-			#print(v)
+			print(v)
 			current_movie_rating = simple_movie_cache.get(str(v))
-			#print(current_movie_rating)
+			print(current_movie_rating)
 		else :
 			q = int(s)
-			#print(q)
+			print(q)
 			current_user_rating = simple_user_cache.get(str(q))
-			#print(current_user_rating)
+			print(current_user_rating)
 	w.write("1\n")
