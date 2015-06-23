@@ -26,14 +26,13 @@ before_script:
     - python3 -c "import numpy; print(numpy.__version__)"
     
 env:
-    - TRAVIS_CACHE=/home/travis/jrwall11/cs373-netflix/cache_files
+    - TRAVIS_CACHE=/home/travis/build/jrwall11/cs373-netflix/cache_files
     
 script:
     - date
     - ls -al
     - touch Netflix.log
     - git clone https://github.com/cs373-summer-2015/netflix-tests.git cache_files
-    - pwd cache_files
     - ls -al
     - make Netflix.html
     - ls -al
