@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+'''
 import urllib
 import json
 import requests
@@ -6,7 +7,7 @@ from urllib.request import urlopen
 import os
 import pickle
 from pprint import pprint
-
+'''
 #
 # netflix_solve
 #
