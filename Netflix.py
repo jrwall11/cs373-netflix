@@ -13,6 +13,7 @@ from pprint import pprint
 #
 
 def netflix_solve(r, w):
+	return 1
 	#url = requests.get('http://www.cs.utexas.edu/~ebanner/netflix-tests/ezo55-Average_Viewer_Rating_Cache.json')
 	#for v in url :
 	#	print(v.json())
@@ -23,4 +24,3 @@ def netflix_solve(r, w):
 	#customer_weight = complex_cache.get(17769)
 	#print(customer_weight)
 	#print(url.json())
-	return 1
