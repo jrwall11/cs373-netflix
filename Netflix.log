@@ -1,0 +1,176 @@
+commit ff375eecd2536ee5230aaf7c531bcc8987682302
+Author: Joshua Waller <jrwall11@utexas.edu>
+Date:   Tue Jun 23 21:38:21 2015 -0500
+
+    Final Product. Corrected bug iss 17,18,19
+
+commit 549524eb7ba10e45af3bf713591bfcb0c09ca083
+Author: Joshua Waller <jrwall11@utexas.edu>
+Date:   Tue Jun 23 19:37:44 2015 -0500
+
+    Simple solution with updated test
+
+commit 2e24d9535eab8809d7869f74846fd62d87c00327
+Author: Joshua Waller <jrwall11@utexas.edu>
+Date:   Tue Jun 23 19:06:56 2015 -0500
+
+    Simple solution added
+
+commit 4d29a9b9360b68b7737bf7a78f8ce5ab467258d0
+Author: Joshua Waller <jrwall11@utexas.edu>
+Date:   Tue Jun 23 18:19:47 2015 -0500
+
+    Added make netflix-test to makefile
+
+commit b4f31a957ebaacc217614bb8d81992fad605f285
+Author: Joshua Waller <jrwall11@utexas.edu>
+Date:   Tue Jun 23 18:14:32 2015 -0500
+
+    Travis Build Trial 4 fix iss15
+
+commit b6856191e0f4e4c72ae936d4db745d1d7ac711f0
+Author: Joshua <jrwall11@utexas.edu>
+Date:   Tue Jun 23 18:13:12 2015 -0500
+
+    Correct path to cache files established
+
+commit 63724ac557232c3a3241cb78f8b678d8ae9b78ed
+Author: Joshua <jrwall11@utexas.edu>
+Date:   Tue Jun 23 18:08:28 2015 -0500
+
+    Path to cache files in travis build
+    
+    I'm getting the path to the cache files to guarantee successful travisCI build
+
+commit 5a95588fed6d6a79d3e6f857ed44b77654d1a0a7
+Author: Joshua <jrwall11@utexas.edu>
+Date:   Tue Jun 23 17:59:32 2015 -0500
+
+    TravisCI build helper 3 debug
+
+commit 88ec4b3173d69aa00f4af4729633752a77e5f5b8
+Author: Joshua <jrwall11@utexas.edu>
+Date:   Tue Jun 23 17:56:51 2015 -0500
+
+    TravisCI build helper 2
+
+commit 71d7659727bb22781f6d1d83099709b44ed181d7
+Author: Joshua Waller <jrwall11@utexas.edu>
+Date:   Tue Jun 23 15:07:30 2015 -0500
+
+    Fixing TRavisCI bug
+
+commit efa8f48b033b201c5f6f30a20d4ae2837924ac1d
+Author: Joshua Waller <jrwall11@utexas.edu>
+Date:   Tue Jun 23 14:57:12 2015 -0500
+
+    TravisCI Build helper 2
+
+commit d70f68773377c635842cf2c9ccf43f0d51cead76
+Author: Joshua <jrwall11@utexas.edu>
+Date:   Tue Jun 23 14:56:27 2015 -0500
+
+    TravisCI build helper
+    
+    Cloned the public class repo during travisCI build
+
+commit 739a6a7eed8a061f2a8a82c6ef25553aa5c5d0e8
+Merge: 4eeebc1 e8ad226
+Author: Joshua Waller <jrwall11@utexas.edu>
+Date:   Tue Jun 23 14:49:50 2015 -0500
+
+    Merge branch 'master' of github.com:jrwall11/cs373-netflix
+    
+    'Test pull'
+
+commit 4eeebc1d23a24e69abfcb8b5b7cf5576beb32ad5
+Author: Joshua Waller <jrwall11@utexas.edu>
+Date:   Tue Jun 23 14:45:59 2015 -0500
+
+    TravisCI build fix
+
+commit e8ad226316b5766b03ebcaad5bac08a2f13eb470
+Author: Joshua <jrwall11@utexas.edu>
+Date:   Tue Jun 23 14:38:44 2015 -0500
+
+    Added an environment variable for TravisCI build
+
+commit 0e8d3c4c7e2a54f5b46860dd13bea48fd922f7c6
+Author: Joshua Waller <jrwall11@utexas.edu>
+Date:   Mon Jun 22 21:44:56 2015 -0500
+
+    Simple solution trial 3
+
+commit e5a32472ba10e1c50fd2cc64b3a1b35489cdbdfb
+Author: Joshua Waller <jrwall11@utexas.edu>
+Date:   Mon Jun 22 21:44:11 2015 -0500
+
+    Simple solution trial 2
+
+commit b92defe43f2e78a34e7293db43fb42d93d3272f9
+Author: Joshua Waller <jrwall11@utexas.edu>
+Date:   Mon Jun 22 21:38:43 2015 -0500
+
+    Start of simple solution
+
+commit 365896be1c80f2114a07a3a9a665ad58a8e10a2f
+Author: Joshua Waller <jrwall11@utexas.edu>
+Date:   Mon Jun 22 19:37:30 2015 -0500
+
+    Test3 to resolve issue 3
+
+commit 5aa4ab96cb39c1a2bf04cc56f4c1912bc6493417
+Author: Joshua Waller <jrwall11@utexas.edu>
+Date:   Mon Jun 22 19:33:04 2015 -0500
+
+    Test2 to resolve issue 3
+
+commit dd1c5f5a0c47665393ccf302bfbca50aa9686545
+Author: Joshua Waller <jrwall11@utexas.edu>
+Date:   Mon Jun 22 19:27:45 2015 -0500
+
+    Test to resolve issue 3
+
+commit f7bb4bb15a8652f0ddb80601c990a81388fbcdfd
+Author: Joshua <jrwall11@utexas.edu>
+Date:   Mon Jun 22 15:15:47 2015 -0500
+
+    Part 3 of issue 13. Issue 13 is resolved
+
+commit c95c5a15ea3d984134dd877578294a3a40fb4fe7
+Author: Joshua <jrwall11@utexas.edu>
+Date:   Mon Jun 22 15:15:17 2015 -0500
+
+    Part 2 of issue 13
+
+commit d8c5cb07538c14bf257caf56324fe9f66d35dd7d
+Author: Joshua <jrwall11@utexas.edu>
+Date:   Mon Jun 22 15:14:33 2015 -0500
+
+    Part 1 of issue 13
+
+commit 3b4db750a28131f4c8cfbf15f4aa0525152095aa
+Author: Joshua <jrwall11@utexas.edu>
+Date:   Mon Jun 22 15:11:34 2015 -0500
+
+    Created makefile resolves issue 12
+
+commit 8a5dc7ae4b6dc775d7177a75bb7d19841dba256d
+Author: Joshua <jrwall11@utexas.edu>
+Date:   Mon Jun 22 15:05:00 2015 -0500
+
+    Resolve issue 11
+    
+    Added the .travis.yml file
+
+commit 3e85fa8c6eb758fe810b0da5e3c19461485e0cdb
+Author: Joshua <jrwall11@utexas.edu>
+Date:   Mon Jun 22 15:00:38 2015 -0500
+
+    Delete README.md because it is not needed
+
+commit bb646701da5d135d5544eda54babac70bce22580
+Author: Joshua <jrwall11@utexas.edu>
+Date:   Sat Jun 20 22:12:06 2015 -0500
+
+    Initial commit
