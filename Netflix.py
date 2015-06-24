@@ -19,7 +19,14 @@ with open(cache_path+'/pam2599-probe_solutions.json') as url3 :
 	expected_results = json.load(url3)
 
 #
-# rep_int_check
+#              rep_int_check
+#
+# My rep_int_check function checks if the string
+# can be represented as an integer. This helps
+# when taking in my RunNetflix.in file bc I can
+# extract the movie simply bc it has a : at the
+# end of the number. This makes it easy to 
+# differentiate b/w Movies & Customers
 #
 
 def rep_int_check(str) :
@@ -30,14 +37,40 @@ def rep_int_check(str) :
 		return False
 
 #
-# netflix_calc
+#              netflix_calc
+#
+# I implemented a lazy solution that involves
+# simple mathematics to provide myself with
+# a solution. I give priority to the lower
+# average b/w the Customer and the Movie
 #
 
 def netflix_calc(i, j) :
-	return (2 * i + j) / 3 
+	if i % 1 == 0 :
+		return i
+	else :
+		if i < 2 :
+			return i
+		else :
+			if i > 4 :
+				return (i + j)/2
+			else :
+				if i > j :
+					return (2*j + i)/3
+				else :
+					return (2*i + j)/3
+
 
 #
-# netflix_solve
+#               netflix_solve
+#
+# In my netflix_solve method I take in my
+# RunNetflix.in file to produce the RunNetflix.out
+# I keep count of my total customer ratings 
+# and the square of the difference b/w the
+# actual result and my guess result I get. Then I
+# conclude by taking the root of the mean of the
+# sum of my calculations and produce the RMSE.
 #
 
 def netflix_solve(r, w) :
@@ -60,11 +93,11 @@ def netflix_solve(r, w) :
 			q = int(s)
 			current_user_rating = simple_user_cache.get(str(q))
 			user_rating_guess = netflix_calc(current_user_rating,current_movie_rating)
-			w.write(str(round(user_rating_guess,2))+'\n')
+			w.write(str(round(user_rating_guess,1))+'\n')
 			actual_user_rating = expected_results.get(str(v)).get(str(q))
 			rmse_count += 1
-			rmse_total += (float(user_rating_guess) - float(actual_user_rating))**2
-			temp = sqrt((rmse_total/rmse_count))
+			rmse_total += (round(float(user_rating_guess),1) - float(actual_user_rating))**2
+			#temp = sqrt((rmse_total/rmse_count))
 			#print('RMSETEMP: '+str(round(temp,2))+'\n')
 	rmse_ans = sqrt((rmse_total/rmse_count))
 	real_rmse = round(rmse_ans, 2)
