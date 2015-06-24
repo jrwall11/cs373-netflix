@@ -37,18 +37,6 @@ def netflix_calc(i, j) :
 	return (2 * i + j) / 3 
 
 #
-# netflix_rmse
-#
-
-#def netflix_rmse(x, y) :
-
-#
-# netflix_print
-#
-
-#def netflix_print(w, q, r, s) :
-
-#
 # netflix_solve
 #
 
@@ -72,10 +60,12 @@ def netflix_solve(r, w) :
 			q = int(s)
 			current_user_rating = simple_user_cache.get(str(q))
 			user_rating_guess = netflix_calc(current_user_rating,current_movie_rating)
-			w.write(str(user_rating_guess)+'\n')
+			w.write(str(round(user_rating_guess,2))+'\n')
 			actual_user_rating = expected_results.get(str(v)).get(str(q))
 			rmse_count += 1
 			rmse_total += (float(user_rating_guess) - float(actual_user_rating))**2
+			temp = sqrt((rmse_total/rmse_count))
+			#print('RMSETEMP: '+str(round(temp,2))+'\n')
 	rmse_ans = sqrt((rmse_total/rmse_count))
 	real_rmse = round(rmse_ans, 2)
-	w.write(str(real_rmse)+'\n')
+	w.write('RMSE: '+str(real_rmse)+'\n')

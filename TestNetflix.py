@@ -10,11 +10,23 @@ from Netflix import rep_int_check, netflix_calc, netflix_solve
 
 class TestNetflix (TestCase) :
 
-	def test_netflix_solve(self) :
+	def test_rep_int_check_1(self) :
+		s = '2043:\n'
+		self.assertEqual(False, rep_int_check(s))
+
+	def test_rep_int_check_2(self) :
+		s = '2043\n'
+		self.assertEqual(True, rep_int_check(s))
+
+	def test_rep_int_check_3(self) :
+		s = '12366\n'
+		self.assertEqual(True, rep_int_check(s))
+
+	def test_netflix_solve_1(self) :
 		r = StringIO("2043:\n1417435\n2312054\n462685\n")
 		w = StringIO()
 		netflix_solve(r,w)
-		self.assertEqual(w.getvalue(), "2043:\n3.5984323624831602\n4.230650186640531\n3.787491657406052\n1.9\n")
+		self.assertEqual(w.getvalue(), "2043:\n3.6\n4.23\n3.79\nRMSE: 1.9\n")
 
 # ----
 # main
