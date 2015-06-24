@@ -1,11 +1,8 @@
 #!/usr/bin/env python3
-#import urllib
 import json
-#import requests
-#from urllib.request import urlopen
 import os
-#import pickle
 from pprint import pprint
+from math import sqrt
 
 global simple_user_cache
 global simple_movie_cache
@@ -36,7 +33,8 @@ def rep_int_check(str) :
 # netflix_calc
 #
 
-#def netflix_calc(i, j) :
+def netflix_calc(i, j) :
+	return (2 * i + j) / 3 
 
 #
 # netflix_rmse
@@ -61,18 +59,23 @@ def netflix_solve(r, w) :
 	current_movie_rating = 0
 	current_user_rating = 0
 	actual_user_rating = 0
+	user_rating_guess = 0
+	rmse_count = 0
+	rmse_total = 0
 	for s in r :
 		if rep_int_check(s) is False :
 			v = s[:-2]
 			current_movie_rating = int(v)
-			print(v)
 			current_movie_rating = simple_movie_cache.get(str(v))
-			print(current_movie_rating)
+			w.write(str(s))
 		else :
 			q = int(s)
-			#print(q)
 			current_user_rating = simple_user_cache.get(str(q))
-			#print(current_user_rating)
+			user_rating_guess = netflix_calc(current_user_rating,current_movie_rating)
+			w.write(str(user_rating_guess)+'\n')
 			actual_user_rating = expected_results.get(str(v)).get(str(q))
-			#print(actual_user_rating)
-	w.write("1\n")
+			rmse_count += 1
+			rmse_total += (float(user_rating_guess) - float(actual_user_rating))**2
+	rmse_ans = sqrt((rmse_total/rmse_count))
+	real_rmse = round(rmse_ans, 2)
+	w.write(str(real_rmse)+'\n')
