@@ -1,3 +1,15 @@
+commit e7073b50b6d13d0ab10561ae56f343877f03b7fd
+Author: Joshua <jrwall11@utexas.edu>
+Date:   Tue Jun 23 21:48:43 2015 -0500
+
+    Create Netflix.log
+
+commit 98c788204f01d9ca28f2007a052b48170a2248af
+Author: Joshua <jrwall11@utexas.edu>
+Date:   Tue Jun 23 21:43:03 2015 -0500
+
+    Corrected .gitignore
+
 commit ff375eecd2536ee5230aaf7c531bcc8987682302
 Author: Joshua Waller <jrwall11@utexas.edu>
 Date:   Tue Jun 23 21:38:21 2015 -0500

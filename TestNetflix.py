@@ -30,30 +30,30 @@ class TestNetflix (TestCase) :
 	def test_netflix_calc_2(self) :
 		i = 2.0
 		j = 5.0
-		self.assertEqual(2.0, netflix_calc(i,j))
+		self.assertEqual(3.4099999999999997, netflix_calc(i,j))
 
 	def test_netflix_calc_3(self) :
 		i = 1.5
 		j = 1.0
-		self.assertEqual(1.5, netflix_calc(i,j))
+		self.assertEqual(1.2650000000000001, netflix_calc(i,j))
 
 	def test_netflix_solve_1(self) :
 		r = StringIO("2043:\n1417435\n2312054\n462685\n")
 		w = StringIO()
 		netflix_solve(r,w)
-		self.assertEqual(w.getvalue(), "2043:\n3.6\n4.1\n3.8\nRMSE: 1.83\n")
+		self.assertEqual(w.getvalue(), "2043:\n3.9\n3.7\n3.9\nRMSE: 1.66\n")
 
 	def test_netflix_solve_2(self) :
 		r = StringIO("2043:\n1417435\n2312054\n462685\n")
 		w = StringIO()
 		netflix_solve(r,w)
-		self.assertEqual(w.getvalue(), "2043:\n3.6\n4.1\n3.8\nRMSE: 1.83\n")
+		self.assertEqual(w.getvalue(), "2043:\n3.9\n3.7\n3.9\nRMSE: 1.66\n")
 
 	def test_netflix_solve_3(self) :
 		r = StringIO("2043:\n1417435\n2312054\n462685\n")
 		w = StringIO()
 		netflix_solve(r,w)
-		self.assertEqual(w.getvalue(), "2043:\n3.6\n4.1\n3.8\nRMSE: 1.83\n")
+		self.assertEqual(w.getvalue(), "2043:\n3.9\n3.7\n3.9\nRMSE: 1.66\n")
 
 # ----
 # main
